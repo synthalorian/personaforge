@@ -1,0 +1,9 @@
+[package]
+name = "personaforge"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "Lint, score, and render durable AI personas from plain text"
+
+[dependencies]
