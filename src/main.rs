@@ -118,7 +118,7 @@ fn usage() {
     eprintln!(
         "personaforge — validate, score, and render .persona files\n\n\
          FORMAT:\n\
-           name: blackclaw\n\
+           name: warden\n\
            role: synthesis engine\n\
            purpose: turn chaos into coherence\n\
            tone: neon confidence with analog warmth\n\
@@ -175,13 +175,13 @@ fn main() {
 mod tests {
     use super::*;
 
-    const GOOD: &str = "name: blackclaw\nrole: synthesis engine\npurpose: turn chaos into coherence\ntone: neon confidence\nrules: Be direct\nrules: Verify work\nexamples: Ship the fix\nvoice: analog warmth\nsafety: no secret leaks\n";
+    const GOOD: &str = "name: warden\nrole: synthesis engine\npurpose: turn chaos into coherence\ntone: neon confidence\nrules: Be direct\nrules: Verify work\nexamples: Ship the fix\nvoice: analog warmth\nsafety: no secret leaks\n";
 
     #[test]
     fn parses_and_validates_good_persona() {
         let persona = parse_persona(GOOD).unwrap();
         validate(&persona).unwrap();
-        assert_eq!(persona.get("name"), Some("blackclaw"));
+        assert_eq!(persona.get("name"), Some("warden"));
     }
 
     #[test]
@@ -203,7 +203,7 @@ mod tests {
     #[test]
     fn renders_markdown() {
         let rendered = render(&parse_persona(GOOD).unwrap()).unwrap();
-        assert!(rendered.contains("# blackclaw"));
+        assert!(rendered.contains("# warden"));
         assert!(rendered.contains("- Verify work"));
     }
 }

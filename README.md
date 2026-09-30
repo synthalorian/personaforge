@@ -17,13 +17,13 @@ The current project fleet already covers agent frameworks, music software, games
 ## Commands
 
 ```sh
-personaforge validate blackclaw.persona
+personaforge validate example.persona
 ```
 ```sh
-personaforge score blackclaw.persona
+personaforge score example.persona
 ```
 ```sh
-personaforge render blackclaw.persona
+personaforge render example.persona
 ```
 
 ## Architecture
@@ -50,4 +50,4 @@ cargo run -- --help
 Local commits only. Never push or create remotes without explicit instruction. Do not weaken validation to make a failing test pass.
 
 ---
-Made by [synth](https://github.com/synthalorian) with blackclaw ⚫🦞
+Made by [synth](https://github.com/synthalorian)
