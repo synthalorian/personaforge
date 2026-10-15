@@ -1,3 +1,5 @@
+![personaforge](.github/preview.png)
+
 # personaforge
 
 Lint, score, and render durable AI personas from plain text.
